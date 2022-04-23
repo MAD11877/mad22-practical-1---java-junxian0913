@@ -30,7 +30,7 @@ public class Main
      
     Scanner in = new Scanner(System.in);
     
-    System.out.print("How many numbers?: "); 
+    
     
     int number = in.nextInt();
     
@@ -40,7 +40,7 @@ public class Main
     List<Integer> uniquenum = new ArrayList<Integer>();
     for (int i=0; i<number; i++ )
       {
-            System.out.print("what are the numbers?: "); 
+             
     
             int num = in.nextInt();
             
@@ -49,7 +49,7 @@ public class Main
             
       }
     
-    System.out.println(l1);
+    
 
     int count = 0;
     
@@ -81,17 +81,30 @@ public class Main
     }
 
     
-    int size = list.l2();
-    System.out.println(l2);
-    System.out.println(uniquenum);
+    int size = l2.size();
+    
     
     Integer max = Collections.max(l2);
 
-    System.out.println(max);  
-
+     
+    
     for (int h=0;h<size; h++){
-      if (max == l2[h]){
-        int index = l2.indexOf(l2[h])); 
+      if (max == l2.get(h)){
+        
+        System.out.println(uniquenum.get(h));
+        
       }
-      System.out.print(index); 
+      
     }
+      
+
+    
+
+    
+    
+    
+    
+         
+    
+  }
+}
